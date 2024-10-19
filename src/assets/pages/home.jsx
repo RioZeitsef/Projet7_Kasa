@@ -1,18 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import APropos from "./apropos.jsx";
+import Layout from "../components/Layout.jsx";
 
-const Accueil = () => {
-  return;
-  <div>
-    <h1>Accueil</h1>
-    <p>Bienvenue sur l'application Kasa !</p>
-    <p>
-      <Link to="/apropos">
-        <a>En savoir plus</a>
-      </Link>
-    </p>
-  </div>;
+const Home = () => {
+  return (
+    <Layout>
+      <main>
+        <h1>Home</h1>
+        <p>Welcome to the home page!</p>
+      </main>
+    </Layout>
+  );
 };
 
-export default Accueil;
+export default Home;
