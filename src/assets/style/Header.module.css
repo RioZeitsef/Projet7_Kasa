@@ -1,0 +1,25 @@
+h1 {
+  margin: 0px;
+}
+
+.position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #ff6060;
+  padding-left: 1.25rem;
+}
+
+.positionlist a {
+  position: relative;
+  top: 0.773rem;
+  text-decoration: none;
+  color: black;
+  padding-right: 1.25rem;
+  vertical-align: middle;
+}
