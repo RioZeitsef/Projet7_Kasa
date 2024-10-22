@@ -1,0 +1,66 @@
+/* Conteneur principal */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 300px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 960px;
+  margin: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 130px; /* Taille de l'image */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Ajustez l'opacité pour obtenir l'effet désiré */
+  z-index: 1;
+}
+
+.text {
+  position: absolute;
+  z-index: 2; /* Assure que le texte est au-dessus de l'overlay */
+  text-align: center;
+  color: white; /* Change la couleur du texte pour qu'il soit lisible sur l'overlay sombre */
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(-50%, -50%); /* Centre le texte */
+  margin: 0; /* Supprime la marge */
+}
+
+/* Media queries pour ajuster le style sur les petits écrans */
+@media (max-width: 768px) {
+  .card {
+    padding: 0.25rem; /* Réduit encore le padding sur les petits écrans */
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -4,15 +4,16 @@ h1 {
 
 .position {
   display: flex;
+  margin: auto;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
+  max-width: 960px;
 }
 
 .title {
   font-size: 2.5em;
   color: #ff6060;
-  padding-left: 1.25rem;
 }
 
 .positionlist a {

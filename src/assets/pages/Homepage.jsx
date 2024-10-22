@@ -1,10 +1,11 @@
+import Banner from "../components/Banner.jsx";
 import Layout from "../components/Layout.jsx";
 
 const Home = () => {
   return (
     <Layout>
+      <Banner />
       <main>
-        <h1>Home</h1>
         <p>Welcome to the home page!</p>
         <ul>
           <li>top appartement</li>
