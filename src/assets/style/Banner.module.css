@@ -14,9 +14,9 @@
   border-radius: 10px;
   width: 80%;
   max-width: 960px;
-  margin: 0.5rem;
   overflow: hidden;
   position: relative;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -33,30 +33,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Ajustez l'opacité pour obtenir l'effet désiré */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 .text {
   position: absolute;
-  z-index: 2; /* Assure que le texte est au-dessus de l'overlay */
+  font-weight: bold;
+  z-index: 2;
   text-align: center;
-  color: white; /* Change la couleur du texte pour qu'il soit lisible sur l'overlay sombre */
-  top: 50%; /* Centre verticalement */
-  left: 50%; /* Centre horizontalement */
-  transform: translate(-50%, -50%); /* Centre le texte */
-  margin: 0; /* Supprime la marge */
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Media queries pour ajuster le style sur les petits écrans */
 @media (max-width: 768px) {
   .card {
-    padding: 0.25rem; /* Réduit encore le padding sur les petits écrans */
+    padding: 0.25rem;
   }
 
   .card img {

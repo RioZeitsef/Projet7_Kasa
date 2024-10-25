@@ -1,0 +1,24 @@
+.title {
+  font-size: 16.25rem;
+  color: #ff6060;
+}
+
+.donotexist {
+  font-size: 2.5em;
+  color: #ff6060;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.linkhomepage {
+  color: black;
+}
+
+.errorpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

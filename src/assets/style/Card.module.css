@@ -1,0 +1,16 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 30%; /* ajustez la largeur pour avoir 3 colonnes */
+  margin: 10px;
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
