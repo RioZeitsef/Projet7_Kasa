@@ -5,8 +5,13 @@ import Card from "./Card.jsx";
 function ListeLogements() {
   return (
     <div className={styles.container}>
-      {logements.map((logement, id) => (
-        <Card key={id} cover={logement.cover} title={logement.title} />
+      {logements.map((logement) => (
+        <Card
+          key={logement.id}
+          id={logement.id}
+          cover={logement.cover}
+          title={logement.title}
+        />
       ))}
     </div>
   );

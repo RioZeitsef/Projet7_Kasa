@@ -5,16 +5,24 @@ import "./index.css";
 import Home from "./assets/pages/Homepage.jsx";
 import ErrorPage from "./error-page.jsx";
 import APropos from "./assets/pages/Apropos.jsx";
+import PageLogement from "./assets/components/PageLogement.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/ErrorPage",
+    element: <ErrorPage />,
   },
   {
     path: "/APropos",
     element: <APropos />,
+  },
+  {
+    path: "/logement/:id",
+    element: <PageLogement />,
   },
 ]);
 

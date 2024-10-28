@@ -1,4 +1,5 @@
 .body {
+  padding: 1.25rem;
   margin: auto;
   display: flex;
   justify-content: center;
