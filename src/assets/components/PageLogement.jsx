@@ -6,10 +6,8 @@ import ErrorPage from "/src/error-page.jsx"; // Importez le composant ErrorPage
 const PageLogement = () => {
   const { id } = useParams();
 
-  // Trouvez le logement correspondant à l'ID
   const logement = logements.find((logement) => logement.id === id);
 
-  // Si le logement n'est pas trouvé, affichez la page d'erreur
   if (!logement) {
     return <ErrorPage />;
   }
@@ -17,10 +15,24 @@ const PageLogement = () => {
   return (
     <Layout>
       <div>
-        <h1>{logement.title}</h1>
-        <img src={logement.cover} alt={logement.title} />
-        <p>{logement.description}</p>
-        <p>Location: {logement.location}</p>
+        <img src={logement.pictures} />
+      </div>
+      <div>
+        <div>
+          <h3>{logement.title}</h3>
+          <p>{logement.description}</p>
+          <p>{logement.location}</p>
+        </div>
+        <div>
+          <span>{logement.tags}</span>
+        </div>
+        <div>
+          <div>
+            <p>{logement.host.name}</p>
+            <img src={logement.host.picture} />
+          </div>
+          {logement.rating}
+        </div>
       </div>
     </Layout>
   );
