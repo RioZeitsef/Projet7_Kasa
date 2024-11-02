@@ -15,7 +15,7 @@ const PageLogement = () => {
   return (
     <Layout>
       <div>
-        <img src={logement.pictures} />
+        <img src={logement.pictures[0]} />
       </div>
       <div>
         <div>
