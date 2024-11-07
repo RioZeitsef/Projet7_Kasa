@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import Layout from "../components/Layout";
-import logements from "./data/datalogements.json"; // Importez les données des logements
-import ErrorPage from "/src/error-page.jsx"; // Importez le composant ErrorPage
+import logements from "/src/data/datalogements.json";
+import ErrorPage from "../pages/ErrorPage.jsx";
 
 const PageLogement = () => {
   const { id } = useParams();

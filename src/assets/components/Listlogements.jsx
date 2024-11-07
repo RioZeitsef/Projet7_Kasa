@@ -1,8 +1,8 @@
-import logements from "./data/datalogements.json";
-import styles from "../style/Listelogements.module.css";
+import logements from "../../data/datalogements.json";
+import styles from "../style/Listlogements.module.css";
 import Card from "./Card.jsx";
 
-function ListeLogements() {
+function ListLogements() {
   return (
     <div className={styles.container}>
       {logements.map((logement) => (
@@ -17,4 +17,4 @@ function ListeLogements() {
   );
 }
 
-export default ListeLogements;
+export default ListLogements;

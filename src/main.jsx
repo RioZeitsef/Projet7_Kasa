@@ -3,8 +3,8 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./assets/pages/Homepage.jsx";
-import ErrorPage from "./error-page.jsx";
-import APropos from "./assets/pages/Apropos.jsx";
+import ErrorPage from "./assets/pages/ErrorPage.jsx";
+import About from "./assets/pages/About.jsx";
 import PageLogement from "./assets/components/PageLogement.jsx";
 
 const router = createBrowserRouter([
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
     element: <ErrorPage />,
   },
   {
-    path: "/APropos",
-    element: <APropos />,
+    path: "/About",
+    element: <About />,
   },
   {
     path: "/logement/:id",
