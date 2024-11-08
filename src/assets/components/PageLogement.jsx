@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Layout from "../components/Layout";
 import logements from "/src/data/datalogements.json";
 import ErrorPage from "../pages/ErrorPage.jsx";
+import Carousel from "../components/Carousel.jsx";
 
 const PageLogement = () => {
   const { id } = useParams();
@@ -15,7 +16,7 @@ const PageLogement = () => {
   return (
     <Layout>
       <div>
-        <img src={logement.pictures[0]} />
+        <Carousel pictures={logement.pictures} />
       </div>
       <div>
         <div>
