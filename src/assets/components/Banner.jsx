@@ -6,7 +6,7 @@ import Mountain from "../images/mountain.jpg";
 const Banner = () => {
   const location = useLocation();
 
-  const isAboutPage = location.pathname === "/APropos";
+  const isAboutPage = location.pathname === "/About";
 
   return (
     <div className={styles.container}>

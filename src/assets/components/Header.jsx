@@ -8,7 +8,7 @@ const Header = () => {
         <h1 className={styles.title}>Kasa</h1>
         <span className={styles.positionlist}>
           <Link to="/">Accueil</Link>
-          <Link to="About">A propos</Link>
+          <Link to="/About">A propos</Link>
         </span>
       </nav>
     </header>

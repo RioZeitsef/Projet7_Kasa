@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const DropdownMenu = () => {
+const Collapse = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,7 +13,7 @@ const DropdownMenu = () => {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (!event.target.closest(".dropdown")) {
+      if (!event.target.closest(".collapse")) {
         closeMenu();
       }
     };
@@ -28,17 +28,11 @@ const DropdownMenu = () => {
   }, [isOpen]);
 
   return (
-    <div className="dropdown">
-      <button onClick={toggleMenu}>Menu</button>
-      {isOpen && (
-        <ul className="dropdown-menu">
-          <li onClick={closeMenu}>Option </li>
-          <li onClick={closeMenu}>Option </li>
-          <li onClick={closeMenu}>Option </li>
-        </ul>
-      )}
+    <div className="collapse">
+      <button onClick={toggleMenu}>{title}</button>
+      {isOpen && <div className="collapse-content">{children}</div>}
     </div>
   );
 };
 
-export default DropdownMenu;
+export default Collapse;
