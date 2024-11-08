@@ -1,6 +1,6 @@
 .carousel {
   position: relative;
-  max-width: 800px;
+  max-width: 1080px;
   margin: auto;
   overflow: hidden;
 }
@@ -22,9 +22,12 @@
   display: block;
 }
 
-.carousel img {
-  /* width: 100%; */
+.carouselItem img {
+  width: 100%;
   height: auto;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 .prev,

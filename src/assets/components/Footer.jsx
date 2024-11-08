@@ -4,7 +4,8 @@ const Footer = () => {
   return (
     <footer>
       <div className={styles.backgroundfooter}>
-        <p className={styles.colortext}>© Kasa. All rights reserved</p>
+        <h1>Kasa</h1>
+        <p className={styles.colortext}>© 2020 Kasa. All rights reserved</p>
       </div>
     </footer>
   );

@@ -5,10 +5,17 @@
   padding: 20px;
   margin-top: 20px;
 }
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
 .colortext {
   color: #fff;
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;

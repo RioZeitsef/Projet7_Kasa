@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "../style/Card.module.css";
+import PropTypes from "prop-types";
 
 function Card({ cover, title, id }) {
   return (
@@ -9,5 +10,11 @@ function Card({ cover, title, id }) {
     </Link>
   );
 }
+
+Card.propTypes = {
+  cover: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Card;
