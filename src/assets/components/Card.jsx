@@ -4,10 +4,12 @@ import PropTypes from "prop-types";
 
 function Card({ cover, title, id }) {
   return (
-    <Link className={styles.cardlink} to={`/logement/${id}`}>
-      <img className={styles.cardimg} src={cover} />
-      <p className={styles.cardtitle}>{title}</p>
-    </Link>
+    <div className={styles.cardcontainer}>
+      <Link className={styles.cardlink} to={`/logement/${id}`}>
+        <img className={styles.cardimg} src={cover} />
+        <p className={styles.cardtitle}>{title}</p>
+      </Link>
+    </div>
   );
 }
 

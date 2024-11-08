@@ -1,7 +1,9 @@
 .container {
+  padding: 2rem;
   display: flex;
-  flex-direction: row;
+  max-width: auto;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 15px;
+  gap: 1.875rem;
+  row-gap: 2rem;
 }

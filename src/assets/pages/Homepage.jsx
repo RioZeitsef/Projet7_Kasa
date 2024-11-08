@@ -1,15 +1,15 @@
 import Banner from "../components/Banner.jsx";
 import Layout from "../components/Layout.jsx";
-import styles from "../style/Bodypages.module.css";
+import styles from "../style/Homepage.module.css";
 import ListeLogements from "../components/Listlogements.jsx";
 
 const Home = () => {
   return (
     <Layout>
       <Banner />
-      <main className={styles.body}>
+      <div className={styles.container}>
         <ListeLogements />
-      </main>
+      </div>
     </Layout>
   );
 };

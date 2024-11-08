@@ -1,11 +1,10 @@
-.body {
-  padding: 1.25rem;
+.container {
   margin: auto;
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  width: 80%;
-  max-width: 960px;
+  width: 100%;
+  max-width: 1080px;
   margin-top: 1.25rem;
   background-color: #f6f6f6;
 }
