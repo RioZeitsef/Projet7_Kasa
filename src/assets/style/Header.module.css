@@ -1,3 +1,8 @@
+.logo {
+  width: 210px;
+  height: 70px;
+}
+
 h1 {
   margin: 0px;
 }
@@ -20,7 +25,7 @@ h1 {
 
 .positionlist a {
   position: relative;
-  top: 0.773rem;
+  top: 1.672rem;
   text-decoration: none;
   color: black;
   padding-right: 1.25rem;
