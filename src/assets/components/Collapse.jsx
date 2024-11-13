@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import styles from "../style/Collapse.module.css";
 
 const Collapse = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,9 @@ const Collapse = ({ title, children }) => {
 
   return (
     <div className="collapse">
-      <button onClick={toggleMenu}>{title}</button>
+      <button className={styles.button} onClick={toggleMenu}>
+        {title}
+      </button>
       {isOpen && <div className="collapse-content">{children}</div>}
     </div>
   );
