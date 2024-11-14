@@ -15,7 +15,7 @@ const Collapse = ({ title, children }) => {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (!event.target.closest(".collapse")) {
+      if (!event.target.closest(`.${styles.collapse}`)) {
         closeMenu();
       }
     };
@@ -30,11 +30,11 @@ const Collapse = ({ title, children }) => {
   }, [isOpen]);
 
   return (
-    <div className="collapse">
+    <div className={styles.collapse}>
       <button className={styles.button} onClick={toggleMenu}>
         {title}
       </button>
-      {isOpen && <div className="collapse-content">{children}</div>}
+      {isOpen && <div className={styles.collapsecontent}>{children}</div>}
     </div>
   );
 };

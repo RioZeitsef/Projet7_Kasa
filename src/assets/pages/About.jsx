@@ -8,7 +8,6 @@ export default function About() {
     <Layout>
       <Banner />
       <main>
-        <h1>A propos</h1>
         {AboutKasa.map((item, index) => (
           <Collapse key={index} title={item.title}>
             <p>{item.content}</p>

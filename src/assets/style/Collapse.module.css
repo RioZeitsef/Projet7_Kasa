@@ -1,6 +1,32 @@
+.collapse {
+  padding-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .button {
   color: white;
-  background-color: aqua;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff6060;
+  padding: 0.5rem 1rem;
   width: 100%;
   text-align: start;
+}
+
+.collapsecontent {
+  padding: 1rem;
+  background-color: #fbfbfb;
+  p {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .button {
+    margin: auto;
+    width: 85%;
+  }
 }

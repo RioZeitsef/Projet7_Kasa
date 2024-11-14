@@ -1,11 +1,11 @@
-body {
+* {
   font-family: "Montserrat-Regular", sans-serif;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
 #error-page {
   display: flex;
