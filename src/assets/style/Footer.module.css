@@ -1,7 +1,9 @@
 .logo {
-  width: 120px;
-  height: 40px;
-  margin: 20px auto;
+  width: 160px;
+  height: 45px;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-right: auto;
 }
 .backgroundfooter {
   display: flex;
@@ -19,9 +21,11 @@ h1 {
 
 .colortext {
   color: #fff;
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 200;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-right: 95px;
+  margin-left: 95px;
 }

@@ -1,18 +1,12 @@
 .logo {
-  width: 210px;
-  height: 70px;
-}
-
-h1 {
-  margin: 0px;
+  width: 145px;
+  height: 45px;
 }
 
 .position {
   display: flex;
-  margin: auto;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
   max-width: 1080px;
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
@@ -23,15 +17,52 @@ h1 {
   color: #ff6060;
 }
 
+.positionlist {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+}
+
 .positionlist a {
-  position: relative;
-  top: 1.672rem;
   text-decoration: none;
   color: black;
-  padding-right: 1.25rem;
   vertical-align: middle;
+  text-transform: uppercase;
 }
 
 .positionlist a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 520px) {
+  .positionlist {
+    width: 35%;
+  }
+}
+
+@media (min-width: 768px) {
+  .positionlist {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .positionlist {
+    width: 15%;
+  }
+
+  .positionlist a {
+    text-transform: none;
+  }
+
+  .position {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    width: 210px;
+    height: 70px;
+  }
 }

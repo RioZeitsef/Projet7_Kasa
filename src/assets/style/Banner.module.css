@@ -50,12 +50,14 @@
 }
 
 @media (max-width: 768px) {
-  .card {
-    padding: 0.25rem;
-  }
-
   .card img {
     width: 100%;
-    height: auto;
+    height: 130px;
+  }
+
+  .text {
+    font-size: 1.5rem;
+    text-align: left;
+    transform: translate(-90%, -50%);
   }
 }
