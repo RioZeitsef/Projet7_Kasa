@@ -4,7 +4,22 @@
   flex-direction: column;
 }
 
+.arrow {
+  display: flex;
+  cursor: pointer;
+  width: 1.2rem;
+  height: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
 .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   font-weight: 600;
   font-size: 1rem;
@@ -18,15 +33,26 @@
 
 .collapsecontent {
   padding: 1rem;
+  transition: show 1.5s ease-out;
   background-color: #fbfbfb;
+  font-size: 0.8rem;
   p {
     margin: 0;
   }
 }
 
+.collapsecontent.show {
+  max-height: 500px;
+}
+
 @media (min-width: 992px) {
   .button {
     margin: auto;
-    width: 85%;
+    max-width: 960px;
+  }
+
+  .collapsecontent {
+    margin: auto;
+    max-width: 928px;
   }
 }
