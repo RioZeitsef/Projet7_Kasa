@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import styles from "../style/PageLogement.module.css";
 import Layout from "../components/Layout";
 import logements from "/src/data/datalogements.json";
 import ErrorPage from "../pages/ErrorPage.jsx";
@@ -18,11 +19,11 @@ const PageLogement = () => {
       <div>
         <Carousel pictures={logement.pictures} />
       </div>
-      <div>
+      <div className={styles.}>
         <div>
-          <h3>{logement.title}</h3>
-          <p>{logement.description}</p>
-          <p>{logement.location}</p>
+          <h3 className={styles.title}>{logement.title}</h3>
+          <p className={styles.description}>{logement.description}</p>
+          <p className={styles.location}>{logement.location}</p>
         </div>
         <div>
           <span>{logement.tags}</span>

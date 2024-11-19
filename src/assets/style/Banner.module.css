@@ -3,6 +3,8 @@
   margin: auto;
   max-height: 300px;
   max-width: 1080px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .card {
