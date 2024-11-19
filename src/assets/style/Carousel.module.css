@@ -48,3 +48,10 @@
 .next {
   right: 10px;
 }
+
+.pages {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  color: white;
+}

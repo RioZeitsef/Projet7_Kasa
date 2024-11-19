@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import styles from "../style/Carousel.module.css";
 import arrowRight from "../images/arrow_right.png";
@@ -6,6 +6,13 @@ import arrowLeft from "../images/arrow_left.png";
 
 const Carousel = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    pictures.forEach((picture) => {
+      const img = new Image();
+      img.src = picture;
+    });
+  }, [pictures]);
 
   const nextSlide = () => {
     const newIndex =
@@ -47,6 +54,9 @@ const Carousel = ({ pictures }) => {
         alt="flèche droite"
         onClick={nextSlide}
       />
+      <div className={styles.pages}>
+        {currentIndex + 1}/{pictures.length}
+      </div>
     </div>
   );
 };
