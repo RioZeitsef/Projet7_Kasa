@@ -24,7 +24,7 @@
 
 .carouselItem img {
   width: 100%;
-  height: auto;
+  height: 255px;
   max-height: 20rem;
   object-fit: cover;
   border-radius: 1rem;
@@ -37,16 +37,18 @@
   transform: translateY(-50%);
   color: white;
   border: none;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
+  width: 15px;
+  height: 24px;
 }
 
 .prev {
-  left: 10px;
+  left: 5px;
 }
 
 .next {
-  right: 10px;
+  right: 5px;
 }
 
 .pages {
@@ -54,4 +56,16 @@
   bottom: 20px;
   left: 50%;
   color: white;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .pages {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    height: ;
+  }
 }

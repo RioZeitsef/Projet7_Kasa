@@ -28,12 +28,14 @@ const Carousel = ({ pictures }) => {
 
   return (
     <div className={styles.carousel}>
-      <img
-        className={styles.prev}
-        src={arrowLeft}
-        alt="flèche gauche"
-        onClick={prevSlide}
-      />
+      {pictures.length > 1 && (
+        <img
+          className={styles.prev}
+          src={arrowLeft}
+          alt="flèche gauche"
+          onClick={prevSlide}
+        />
+      )}
       <div className={styles.carouselInner}>
         {pictures.map((picture, index) => (
           <div
@@ -48,15 +50,19 @@ const Carousel = ({ pictures }) => {
           </div>
         ))}
       </div>
-      <img
-        className={styles.next}
-        src={arrowRight}
-        alt="flèche droite"
-        onClick={nextSlide}
-      />
-      <div className={styles.pages}>
-        {currentIndex + 1}/{pictures.length}
-      </div>
+      {pictures.length > 1 && (
+        <img
+          className={styles.next}
+          src={arrowRight}
+          alt="flèche droite"
+          onClick={nextSlide}
+        />
+      )}
+      {pictures.length > 1 && (
+        <div className={styles.pages}>
+          {currentIndex + 1}/{pictures.length}
+        </div>
+      )}
     </div>
   );
 };
