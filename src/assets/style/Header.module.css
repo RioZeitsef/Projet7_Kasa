@@ -61,7 +61,8 @@
   .position {
     margin-left: auto;
     margin-right: auto;
-    padding: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .logo {

@@ -2,6 +2,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
+  max-width: 960px;
+  margin: auto;
 }
 
 .title {
@@ -66,6 +68,35 @@
       height: 2.5rem;
       border-radius: 50%;
       object-fit: cover;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .logementheader {
+    width: 960px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ratingandname {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .logementcontent {
+    height: 725px;
+  }
+
+  .collapsediv {
+    display: flex;
+    gap: 20px;
+    .collapse {
+      width: 250px;
     }
   }
 }

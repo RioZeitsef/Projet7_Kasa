@@ -1,6 +1,6 @@
 .cardcontainer {
-  min-width: 318.5px;
-  max-height: 310px;
+  min-width: 340px;
+  max-height: 340px;
   flex: 1 1 calc(33.333%);
   justify-content: center;
   background: linear-gradient(#ff6060, #cc4d4d);
@@ -11,7 +11,6 @@
 .cardlink {
   text-decoration: none;
   position: relative;
-  height: 36px;
 }
 
 .cardimg {
@@ -35,5 +34,18 @@
   .cardcontainer {
     min-width: 300px;
     max-width: 318.5px;
+  }
+
+  .cardlink {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardtitle {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 36px;
   }
 }

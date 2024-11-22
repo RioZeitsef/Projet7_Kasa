@@ -2,6 +2,7 @@ import { useRouteError } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout.jsx";
 import styles from "../style/Errorpage.module.css";
+import error404 from "../logo/404.svg";
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -10,7 +11,7 @@ export default function ErrorPage() {
   return (
     <Layout>
       <div className={styles.errorpage}>
-        <h1 className={styles.title}>404</h1>
+        <img className={styles.title} src={error404} />
         <p className={styles.donotexist}>
           Oups ! La page que vous demandez n`existe pas.
         </p>

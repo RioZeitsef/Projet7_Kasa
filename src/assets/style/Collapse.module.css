@@ -1,7 +1,9 @@
 .collapse {
+  margin: auto;
   padding-bottom: 1.2rem;
   display: flex;
   flex-direction: column;
+  max-width: 960px;
 }
 
 .arrow {
@@ -28,11 +30,11 @@
   background-color: #ff6060;
   padding: 0.5rem 1rem;
   width: 100%;
-  text-align: start;
 }
 
 .collapsecontent {
   padding: 1rem;
+  max-width: 960px;
   transition: show 1.5s ease-out;
   background-color: #fbfbfb;
   font-size: 0.8rem;
@@ -49,10 +51,17 @@
   .button {
     margin: auto;
     max-width: 960px;
+    min-width: 470px;
   }
 
-  .collapsecontent {
+  .collapse {
+    flex-wrap: wrap;
     margin: auto;
-    width: 928px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .collapsecontent p {
+    font-size: 1rem;
   }
 }
