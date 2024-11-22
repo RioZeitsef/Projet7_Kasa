@@ -51,14 +51,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   .salerinfo {
     display: flex;
     align-items: end;
     max-width: 130px;
     p {
       margin: 0;
-      padding-right: 0.7rem;
+      padding-right: 1rem;
       font-size: 1.1rem;
       color: #ff6060;
       text-align: right;
@@ -81,10 +81,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 
-    .ratingandname {
+  .ratingandname {
+    display: flex;
+    flex-direction: column-reverse;
+    .salerinfo {
       display: flex;
-      flex-direction: column-reverse;
+      align-items: center;
+      p {
+        font-size: 1.125rem;
+      }
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
     }
   }
 

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import styles from "../style/PageLogement.module.css";
-import Layout from "../components/Layout";
+import RatingStars from "../components/ratingstars.jsx";
+import Layout from "../components/Layout.jsx";
 import logements from "/src/data/datalogements.json";
 import ErrorPage from "../pages/ErrorPage.jsx";
 import Carousel from "../components/Carousel.jsx";
@@ -36,7 +37,7 @@ const PageLogement = () => {
             </div>
           </div>
           <div className={styles.ratingandname}>
-            {logement.rating}
+            <RatingStars rating={logement.rating} />
             <div className={styles.salerinfo}>
               <p>{logement.host.name}</p>
               <img src={logement.host.picture} />
