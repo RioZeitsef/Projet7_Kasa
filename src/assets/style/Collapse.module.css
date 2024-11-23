@@ -1,8 +1,5 @@
 .collapse {
-  margin: auto;
   padding-bottom: 1.2rem;
-  display: flex;
-  flex-direction: column;
   max-width: 960px;
 }
 
@@ -56,9 +53,9 @@
 
   .collapse {
     flex-wrap: wrap;
-    margin: auto;
     padding-left: 0px;
     padding-right: 0px;
+    margin-inline: auto;
   }
 
   .collapsecontent p {

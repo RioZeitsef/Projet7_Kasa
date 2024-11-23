@@ -44,9 +44,7 @@ const Carousel = ({ pictures }) => {
               index === currentIndex ? styles.active : ""
             }`}
           >
-            {index === currentIndex && (
-              <img src={picture} alt={`Slide ${index}`} />
-            )}
+            <img src={picture} alt={`Slide ${index}`} />
           </div>
         ))}
       </div>

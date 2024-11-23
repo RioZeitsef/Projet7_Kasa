@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import styles from "../style/PageLogement.module.css";
-import RatingStars from "../components/ratingstars.jsx";
+import RatingStars from "./RatingStars.jsx";
 import Layout from "../components/Layout.jsx";
 import logements from "/src/data/datalogements.json";
 import ErrorPage from "../pages/ErrorPage.jsx";
