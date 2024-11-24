@@ -1,11 +1,27 @@
+main {
+  min-height: 65vh;
+}
+
+.errorpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .title {
-  font-size: 16.25rem;
-  color: #ff6060;
+  width: 200px;
+  height: 100px;
 }
 
 .donotexist {
-  font-size: 2.5em;
+  font-size: 18px;
   color: #ff6060;
+  font-weight: 500;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -15,10 +31,19 @@
   color: black;
 }
 
-.errorpage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+@media (min-width: 1080px) {
+  .title {
+    width: 500px;
+    height: 200px;
+  }
+
+  .donotexist {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .return {
+    display: none;
+  }
 }

@@ -13,7 +13,8 @@ export default function ErrorPage() {
       <div className={styles.errorpage}>
         <img className={styles.title} src={error404} />
         <p className={styles.donotexist}>
-          Oups ! La page que vous demandez n`existe pas.
+          Oups ! La page que <br className={styles.return} />
+          vous demandez n`existe pas.
         </p>
         <p>
           <Link to="/" className={styles.linkhomepage}>
