@@ -33,7 +33,7 @@ const Collapse = ({ title, children }) => {
   return (
     <div className={styles.collapse}>
       <button className={styles.button}>
-        {title}{" "}
+        {title}
         <img
           onClick={toggleMenu}
           src={ArrowUp}
@@ -41,13 +41,9 @@ const Collapse = ({ title, children }) => {
           className={`${styles.arrow} ${isOpen ? styles.rotate : ""}`}
         />
       </button>
-      {isOpen && (
-        <div
-          className={`${styles.collapsecontent} ${isOpen ? styles.show : ""}`}
-        >
-          {children}
-        </div>
-      )}
+      <div className={`${styles.collapsecontent} ${isOpen ? styles.show : ""}`}>
+        {children}
+      </div>
     </div>
   );
 };

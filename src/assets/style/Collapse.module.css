@@ -8,7 +8,7 @@
   cursor: pointer;
   width: 1.2rem;
   height: 0.7rem;
-  transition: transform 0.3s ease;
+  transition: transform 1s ease;
 }
 
 .rotate {
@@ -30,11 +30,12 @@
 }
 
 .collapsecontent {
-  padding: 1rem;
-  max-width: 960px;
-  transition: show 1.5s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease, padding 1s ease;
   background-color: #fbfbfb;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  padding: 0 1rem;
   p {
     margin: 0;
   }
@@ -42,6 +43,7 @@
 
 .collapsecontent.show {
   max-height: 500px;
+  padding: 1rem;
 }
 
 @media (min-width: 992px) {
