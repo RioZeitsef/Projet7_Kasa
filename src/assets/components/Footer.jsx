@@ -3,11 +3,9 @@ import FooterLogo from "../logo/FooterLOGO.svg";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className={styles.backgroundfooter}>
-        <img className={styles.logo} src={FooterLogo} alt="logo" />
-        <p className={styles.colortext}>© 2020 Kasa. All rights reserved</p>
-      </div>
+    <footer className={styles.backgroundfooter}>
+      <img className={styles.logo} src={FooterLogo} alt="logo" />
+      <p className={styles.colortext}>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 };
